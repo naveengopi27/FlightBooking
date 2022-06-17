@@ -1,0 +1,138 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Airline",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 5001,
+      "UpstreamPathTemplate": "/Airlines",
+      "UpstreamHttpMethod": [ "Get" ]
+     
+      
+    },
+    {
+      "DownstreamPathTemplate": "/api/Airline/Home/Add",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 5001,
+      "UpstreamPathTemplate": "/Airlines/Add",
+      "UpstreamHttpMethod": [ "Post" ]
+     
+      }
+    ,
+    {
+      "DownstreamPathTemplate": "/api/Airline/Block",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 5001,
+      "UpstreamPathTemplate": "/Airline/Block",
+      "UpstreamHttpMethod": [ "Delete" ]
+     
+    },
+    {
+      "DownstreamPathTemplate": "/api/Login",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5002,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Logins",
+      "UpstreamHttpMethod": [ "Get" ]
+     
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Inventory/Block",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Inventorys/delete",
+      "UpstreamHttpMethod": [ "Delete" ]
+    
+    },
+    {
+      "DownstreamPathTemplate": "/api/Inventory/Addinventorydetails",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Add/inventory",
+      "UpstreamHttpMethod": [ "Post" ]
+     
+    },
+    {
+      "DownstreamPathTemplate": "/api/Inventory/get",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/search",
+      "UpstreamHttpMethod": [ "Get" ]
+     
+    },
+    {
+      "DownstreamPathTemplate": "/api/Login/loginuserdetail",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5002,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/logins",
+      "UpstreamHttpMethod": [ "Get" ] 
+      
+    },
+    {
+      "DownstreamPathTemplate": "/api/Login/register",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5002,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/registers",
+      "UpstreamHttpMethod": [ "Get" ]
+     
+    },
+    {
+      "DownstreamPathTemplate": "/api/Login/registeradmin",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5002,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/login/register/admin",
+      "UpstreamHttpMethod": [ "Get" ]
+     
+    },
+    {
+      "DownstreamPathTemplate": "/api/Login/loginuserdetail",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5002,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/loginuserdetails",
+      "UpstreamHttpMethod": [ "Get" ]
+     
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/GetAllBooking",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Bookings",
+      "UpstreamHttpMethod": [ "Get" ]
+      
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/cancellingbooking",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Booking/cancel",
+      "UpstreamHttpMethod": [ "Delete" ]
+     
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/add",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 5003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Register/booking",
+      "UpstreamHttpMethod": [ "Post" ]
+      
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}  
